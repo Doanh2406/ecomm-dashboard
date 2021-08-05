@@ -1,15 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-import { Button } from 'react-bootstrap';
+import logo from "./logo.svg";
+import "./App.css";
+import { Button } from "react-bootstrap";
+import { BrowserRouter, Route } from "react-router-dom";
+
 
 function App() {
   return (
     <div className="App">
-      <h1 className="clas">
-        hello ecomm
-      </h1>
-      <button className="th">click me</button>
-      <Button className="btn btn-primary">click me</Button>
+     <h1>hello Viet Nhat</h1>
     </div>
   );
 }
