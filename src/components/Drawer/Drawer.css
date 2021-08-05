@@ -1,0 +1,44 @@
+:root{
+  background-color: #cccccc;
+}
+.dr-container{
+  margin-top: 10px;
+  height:fit-content;
+  background-color: #fff;
+  width: 200px;
+  padding-left: 20px;
+  padding-top: 30px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+.dr-button{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor:pointer;
+  width: fit-content;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.dr-icons{
+ margin-right: 10px;
+ 
+}
+.home-button{
+  
+  margin-bottom: 30px;
+  margin-left: 20;
+}
+.logout{
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.dr-button:hover{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor:pointer;
+  background-color: #03b1fc;
+  margin-left: 20px;
+}
