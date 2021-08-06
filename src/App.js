@@ -1,7 +1,6 @@
 import React from 'react'
-import Drawer from './components/Drawer/Drawer'
-import Customer from './components/Customers/Customer';
-import OverView from './components/OverView/OverView';
+import { Payment,Drawer,OverView,Customer,Product } from './components';
+import './App.css'
 import {
   BrowserRouter as Router,
   Switch,
@@ -11,18 +10,24 @@ import {
 function App() {
   return (
     <Router>
-      <div style={{display:'flex', flexDriection:'row'}}>
+      <div style={{ display: 'flex', flexDriection: 'row' }}>
 
 
         <Drawer />
         <Switch>
-          <Route exact path="/">
-            <OverView />
-          </Route>
+
           <Route path="/customer">
             <Customer />
           </Route>
-
+          <Route path="/product">
+            <Product />
+          </Route>
+          <Route exact path="/overview">
+            <OverView />
+          </Route>
+          <Route exact path="/payment">
+            <Payment />
+          </Route>
         </Switch>
       </div>
     </Router>

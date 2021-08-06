@@ -2,14 +2,19 @@
   background-color: #cccccc;
 }
 .dr-container{
-  margin-top: 10px;
-  height:fit-content;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 6px 7px 6px 4px rgba(0, 0, 0, .1);
+  
+  margin-top: 20px;
+  height:93vh;
   background-color: #fff;
-  width: 200px;
+  min-width: 180px;
   padding-left: 20px;
   padding-top: 30px;
   border-radius: 10px;
   margin-left: 10px;
+  margin-right: 10px;
 }
 .dr-button{
   display: flex;
@@ -20,6 +25,7 @@
   border-radius: 10px;
   padding-left: 10px;
   padding-right: 10px;
+  
 }
 .dr-icons{
  margin-right: 10px;
@@ -39,6 +45,12 @@
   flex-direction: row;
   align-items: center;
   cursor:pointer;
-  background-color: #03b1fc;
+  background-color: #033dfc;
   margin-left: 20px;
+  color: #fff;
+}
+.dr{
+  display: flex;
+
+  height:100vh;
 }

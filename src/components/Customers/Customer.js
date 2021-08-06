@@ -1,9 +1,13 @@
 import React from 'react'
-
+import {Card,FONTS} from '../../elements'
 export default function Customer() {
   return (
     <div>
-      Customer
+      
+      <p style={{...FONTS.h2}} >ansdijassdajasdadald</p>
+      <h2>ádaasdsadadassdsadad</h2>
+      <p>ấdadsadadasdasdawtrehfgjgkuyi</p>
     </div>
   )
+
 }
