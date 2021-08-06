@@ -6,83 +6,87 @@ import './Drawer.css';
 
 
 export default function Drawer() {
-  const activeStyle={
-    color:'#c300d9',
+  const activeStyle = {
+    color: '#c300d9',
+    marginLeft: '20px',
 
-    
+
   }
   const menu = [
     {
-      link: '/',
+      link: '/overview',
       name: 'Over View',
-      icons:<AiFillShopping className='dr-icons'  />
+      icons: <AiFillShopping className='dr-icons' />
     },
     {
-      link: '/customer',
+      link: '/product',
       name: 'Product',
-      icons:<AiFillShop className='dr-icons'  />
+      icons: <AiFillShop className='dr-icons' />
     },
     {
-      link: '/customer',
+      link: '/payment',
       name: 'Payment',
-      icons:<AiFillAccountBook className='dr-icons' />
+      icons: <AiFillAccountBook className='dr-icons' />
     },
     {
       link: '/customer',
       name: 'Revenue',
-      icons:<AiOutlineBarChart className='dr-icons' />
+      icons: <AiOutlineBarChart className='dr-icons' />
     },
     {
       link: '/customer',
       name: 'Growth',
-      icons:<AiOutlineLineChart className='dr-icons' />
+      icons: <AiOutlineLineChart className='dr-icons' />
     },
     {
       link: '/customer',
       name: 'Orders',
-      icons:<AiOutlinePartition className='dr-icons' />
+      icons: <AiOutlinePartition className='dr-icons' />
     },
     {
       link: '/customer',
       name: 'Customers',
-      icons:<AiOutlineUser className='dr-icons' />
+      icons: <AiOutlineUser className='dr-icons' />
     },
 
   ]
 
   return (
-    <div className='dr-container'>
-     
+    <div className='dr'>
+      <div className='dr-container'>
 
-      <NavLink to='/' style={{ textDecoration: 'none', color: 'black' }}>
+
+        <NavLink exact to='/' style={{ textDecoration: 'none', color: 'black' }}></NavLink>
         <div className='home-button dr-button'  >
           <AiFillShopping className='dr-icons' />
           <p>E-commerce</p>
         </div>
-      </NavLink>
-
-      {
-        menu.map((item, index) => (
-
-          <NavLink key={index} to={item.link} activeStyle={activeStyle} style={{ textDecoration: 'none', color: 'black' }}>
-            <div className='dr-button'>
-              {item.icons}
-              <p>{item.name}</p>
-            </div>
-          </NavLink>
-        ))
-      }
-
-     
 
 
-      <div className='logout dr-button'>
-        <AiOutlineLogout className='dr-icons' />
-        <p>Logout</p>
+        {
+          menu.map((item, index) => (
+
+            <NavLink key={index} to={item.link} activeStyle={activeStyle} style={{ textDecoration: 'none', color: 'black' }}>
+              <div className='dr-button'>
+                {item.icons}
+                <p>{item.name}</p>
+              </div>
+            </NavLink>
+          ))
+        }
+
+        
+      
+
+          
+        <div className='logout dr-button'>
+          <AiOutlineLogout className='dr-icons' />
+          <p>Logout</p>
+        </div>
+
+
+        <div style={{ height: 10 }} />
       </div>
-
-
-      <div style={{ height: 10 }} />
     </div>
   )
 }
