@@ -1,5 +1,6 @@
 import React from 'react'
 import { Payment,Drawer,OverView,Customer,Product } from './components';
+import './App.css'
 import {
   BrowserRouter as Router,
   Switch,

@@ -5,7 +5,8 @@ export default function Customer() {
     <div>
       
       <p style={{...FONTS.h2}} >ansdijassdajasdadald</p>
-      <p>sadsda</p>
+      <h2>ádaasdsadadassdsadad</h2>
+      <p>ấdadsadadasdasdawtrehfgjgkuyi</p>
     </div>
   )
 
