@@ -1,0 +1,18 @@
+.overview{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 10px;
+}
+.overview__feed{
+    flex:4;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.overview__suggest{
+    flex: 2;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+

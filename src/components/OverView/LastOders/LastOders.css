@@ -1,0 +1,35 @@
+.last-oders {
+    background:#fff;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.last-oders > span {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+
+}
+.last-oders__table{
+    width: 100%;
+    justify-content: space-between;
+}
+.last-oders__table > tr {
+    text-align: left;
+}
+.last-oders__table > td {
+    height: 100px;
+    text-align: left;
+}
+
+
+.avatar{
+vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: contain;
+}
