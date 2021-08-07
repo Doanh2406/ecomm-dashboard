@@ -1,8 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { AiFillShopping, AiOutlineLogout, AiFillShop, AiFillAppstore, AiFillAccountBook, AiOutlineBarChart, AiOutlineLineChart, AiOutlinePartition, AiOutlineUser } from 'react-icons/ai'
+import { AiFillShopping, AiOutlineLogout, AiFillShop,AiOutlineMenu, AiFillAccountBook, AiOutlineBarChart, AiOutlineLineChart, AiOutlinePartition, AiOutlineUser } from 'react-icons/ai'
 import './Drawer.css';
-
+import Card from '../../elements/Card/Card'
 
 
 export default function Drawer() {
@@ -50,11 +50,16 @@ export default function Drawer() {
     },
 
   ]
+  
+ 
 
   return (
     <div className='dr'>
+      <div className='dr-menu'  style={{cursor:'pointer'}} >
+      <AiOutlineMenu size={25} />
+        </div>
       <div className='dr-container'>
-
+      
 
         <NavLink exact to='/' style={{ textDecoration: 'none', color: 'black' }}></NavLink>
         <div className='home-button dr-button'  >
@@ -87,6 +92,12 @@ export default function Drawer() {
 
         <div style={{ height: 10 }} />
       </div>
+
+
+      
+
+
+
     </div>
   )
 }
