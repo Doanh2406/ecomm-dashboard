@@ -22,7 +22,7 @@ export default function Product() {
 
 
       <div className='pro-estimate'>
-        <Card Content={() => (<>
+        <Card height='50%' Content={() => (<>
           <div className='pro-estimate-head'>
             <p style={{ ...FONTS.h6, color: COLORS.lightGreen, fontSize: 23 }}>3 hot products</p>
             <Cs />
@@ -34,7 +34,7 @@ export default function Product() {
 
 
       <div className='pr-thc'>
-      <Card styleContainer={{ marginTop: SIZES.margin, width: '90%', }} Content={() => (<>
+      <Card styleContainer={{ marginTop: SIZES.margin, width: '99%',height:'118%' }} Content={() => (<>
           <div style={{ display: 'flex', flexDirection: 'row', marginLeft: SIZES.margin }}>
             <Chart2 />
             <div className='brief'>

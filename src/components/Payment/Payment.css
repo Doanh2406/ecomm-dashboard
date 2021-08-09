@@ -1,0 +1,10 @@
+.pa-card{
+  display: flex;
+  flex-direction: column;
+  
+}
+.pa-card-row{
+  display: flex;
+  flex-direction: row;
+  flex:1
+}

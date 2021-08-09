@@ -29,7 +29,7 @@ export default function Drawer() {
       icons: <AiFillAccountBook className='dr-icons' />
     },
     {
-      link: '/customer',
+      link: '/revenue',
       name: 'Revenue',
       icons: <AiOutlineBarChart className='dr-icons' />
     },
