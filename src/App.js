@@ -1,5 +1,5 @@
 import React from 'react'
-import { Payment,Drawer,OverView,Customer,Product, Revenue } from './components';
+import { Payment,Drawer,OverView,Customer,Product, Revenue, Growth,Order } from './components';
 import './App.css'
 import {
   BrowserRouter as Router,
@@ -30,6 +30,12 @@ function App() {
           </Route>
           <Route exact path="/revenue">
             <Revenue />
+          </Route>
+          <Route exact path="/growth">
+            <Growth/>
+          </Route>
+          <Route exact path="/order">
+            <Order/>
           </Route>
         </Switch>
       </div>

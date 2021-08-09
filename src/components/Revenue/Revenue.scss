@@ -1,21 +1,25 @@
-$primary:#033dfc;
-$secondary:#c300d9;
-$third:#cccccc;
+@import '../value';
 
-@mixin max-width($direction) {
-  display: flex;
-  flex:1;
-  flex-direction: $direction;
-  }
-  @mixin center-div {
-    align-items: center;
-    justify-items: center;
-    text-align: center;
-  }
 .re-container{
   @include max-width(column);
   padding-bottom: 20px;
 
+}
+@keyframes mymove {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 50%;
+  }
+}
+@keyframes mymove2 {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 50%;
+  }
 }
 .re-chart{
   @include max-width(row);
@@ -27,14 +31,17 @@ $third:#cccccc;
     border-bottom-left-radius: 20px;
     height: 40px;
     color:white;
+    animation: mymove 3s ease-in-out forwards;
   }
+
   .re-chart-unactive{
     @include center-div();
     background-color: $third;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     height: 40px;
-    color:white
+    color:white;
+    animation: mymove2 6s forwards;
   }
 }
 
@@ -46,3 +53,4 @@ $third:#cccccc;
       }
    }
 
+  

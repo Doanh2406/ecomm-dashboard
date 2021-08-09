@@ -34,12 +34,12 @@ export default function Drawer() {
       icons: <AiOutlineBarChart className='dr-icons' />
     },
     {
-      link: '/customer',
+      link: '/growth',
       name: 'Growth',
       icons: <AiOutlineLineChart className='dr-icons' />
     },
     {
-      link: '/customer',
+      link: '/order',
       name: 'Orders',
       icons: <AiOutlinePartition className='dr-icons' />
     },
