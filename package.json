@@ -4,11 +4,15 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.12.3",
+<<<<<<< HEAD
+    "@material-ui/icons": "^4.11.2",
+=======
     "@material-ui/data-grid": "^4.0.0-alpha.36",
     "@material-ui/icons": "^4.11.2",
     "@material-ui/lab": "^4.0.0-alpha.60",
     "@material-ui/x-grid-data-generator": "^4.0.0-alpha.36",
     "@material-ui/x-license": "^4.0.0-alpha.36",
+>>>>>>> 8cfa662278fbee8554918d482e9f1c5741d21e6f
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
