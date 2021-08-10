@@ -1,6 +1,10 @@
 import React from 'react'
+<<<<<<< HEAD
 import { Payment,Drawer,OverView,Product, Revenue } from './components';
 import Customer from './components/pages/Customers/Customer';
+=======
+import { Payment,Drawer,OverView,Customer,Product, Revenue, Growth,Order } from './components';
+>>>>>>> fe78ba7d9efb74a7dfc320fd13795931a6e652f9
 import './App.css'
 import {
   BrowserRouter as Router,
@@ -35,6 +39,12 @@ function App() {
           </Route>
           <Route exact path="/revenue">
             <Revenue />
+          </Route>
+          <Route exact path="/growth">
+            <Growth/>
+          </Route>
+          <Route exact path="/order">
+            <Order/>
           </Route>
         </Switch>
       </div>
