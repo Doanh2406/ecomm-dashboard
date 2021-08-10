@@ -1,5 +1,6 @@
 import React from 'react'
-import { Payment,Drawer,OverView,Customer,Product, Revenue } from './components';
+import { Payment,Drawer,OverView,Product, Revenue } from './components';
+import Customer from './components/pages/Customers/Customer';
 import './App.css'
 import {
   BrowserRouter as Router,
@@ -7,6 +8,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import CustomerInfor from './components/pages/CustomersIfors/CustomerInfor';
 function App() {
   return (
     <Router>
@@ -16,8 +18,11 @@ function App() {
         <Drawer />
         <Switch>
 
-          <Route path="/customer">
+          <Route path="/customers">
             <Customer />
+          </Route>
+          <Route path="/customer/:customerId">
+            <CustomerInfor />
           </Route>
           <Route path="/product">
             <Product />

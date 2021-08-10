@@ -1,5 +1,5 @@
 import Payment from "./Payment/Payment";
-import Customer from "./Customers/Customer";
+import Customer from "./pages/Customers/Customer";
 import OverView from "./OverView/OverView";
 import Drawer from "./Drawer/Drawer";
 import Product from "./Product/Product";
