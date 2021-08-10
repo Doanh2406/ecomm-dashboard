@@ -15,7 +15,7 @@
 }
 @keyframes mymove2 {
   from {
-    width: 0px;
+    width: 0;
   }
   to {
     width: 50%;
@@ -41,7 +41,9 @@
     border-bottom-right-radius: 20px;
     height: 40px;
     color:white;
-    animation: mymove2 6s forwards;
+    animation: mymove2 3s forwards;
+    animation-delay: 3s;
+    width: 0px;
   }
 }
 

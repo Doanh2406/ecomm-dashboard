@@ -1,2 +1,12 @@
 @import '../value';
 
+.gr-total-container{
+  display: flex;
+  .gr-total-title{
+    display: flex;
+    flex:1;
+    flex-direction: row;
+    align-items: center;
+    
+  }
+}

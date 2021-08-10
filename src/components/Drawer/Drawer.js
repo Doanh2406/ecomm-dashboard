@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { AiFillShopping, AiOutlineLogout, AiFillShop,AiOutlineMenu, AiFillAccountBook, AiOutlineBarChart, AiOutlineLineChart, AiOutlinePartition, AiOutlineUser } from 'react-icons/ai'
 import './Drawer.css';
-import Card from '../../elements/Card/Card'
+
 
 
 export default function Drawer() {

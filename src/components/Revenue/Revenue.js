@@ -86,11 +86,11 @@ export default function Revenue() {
 
       <Paper className={classes.paper}>
         <div className='re-chart' >
-          <div className='re-chart-active' style={{ width: '50%' }}>
+          <div className='re-chart-active'>
             <p >50% buy</p>
           </div>
 
-          <div className='re-chart-unactive' style={{ width: '50%' }}>
+          <div className='re-chart-unactive' >
             <p >50% not buy</p>
           </div>
         </div>
