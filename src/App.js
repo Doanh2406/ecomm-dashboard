@@ -1,10 +1,8 @@
 import React from 'react'
-<<<<<<< HEAD
 import { Payment,Drawer,OverView,Product, Revenue } from './components';
 import Customer from './components/pages/Customers/Customer';
-=======
-import { Payment,Drawer,OverView,Customer,Product, Revenue, Growth,Order } from './components';
->>>>>>> fe78ba7d9efb74a7dfc320fd13795931a6e652f9
+import Growth from './components/Growth/Growth';
+import Order from './components/Order/Order';
 import './App.css'
 import {
   BrowserRouter as Router,
@@ -13,6 +11,10 @@ import {
   Link
 } from "react-router-dom";
 import CustomerInfor from './components/pages/CustomersIfors/CustomerInfor';
+import NewCustomer from './components/pages/newCustomer/NewCustomer';
+import ProductList from './components/pages/productList/ProductList';
+import ProductInfor from './components/pages/ProductInfor/ProductInfor';
+import NewProduct from './components/pages/newProduct/NewProduct';
 function App() {
   return (
     <Router>
@@ -28,8 +30,20 @@ function App() {
           <Route path="/customer/:customerId">
             <CustomerInfor />
           </Route>
-          <Route path="/product">
+          <Route path="/newcustomer">
+            <NewCustomer />
+          </Route>
+          {/* <Route path="/product">
             <Product />
+          </Route> */}
+          <Route path="/products">
+            <ProductList />
+          </Route>
+          <Route path="/product/:productId">
+            <ProductInfor />
+          </Route>
+          <Route path="/newproduct">
+            <NewProduct />
           </Route>
           <Route exact path="/overview">
             <OverView />
