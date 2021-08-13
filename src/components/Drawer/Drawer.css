@@ -15,7 +15,7 @@
   border-radius: 10px;
   margin-left: 10px;
   margin-right: 10px;
-  animation: my 1s forwards , my2 1s  ; 
+  animation: my 0.4s forwards 
 
 }
 @keyframes my {
@@ -29,15 +29,9 @@
   }
   
 }
-@keyframes my2 {
-  100%{
-    width: 220px;
-  }
-  0%{
-    width: 0px
-  }
+
   
-}
+
 
   
 

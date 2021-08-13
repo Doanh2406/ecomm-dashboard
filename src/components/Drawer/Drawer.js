@@ -30,7 +30,7 @@ export default function Drawer() {
       icons: <AiFillShopping className='dr-icons' />
     },
     {
-      link: '/product',
+      link: '/products',
       name: 'Product',
       icons: <AiFillShop className='dr-icons' />
     },
@@ -55,7 +55,7 @@ export default function Drawer() {
       icons: <AiOutlinePartition className='dr-icons' />
     },
     {
-      link: '/customer',
+      link: '/customers',
       name: 'Customers',
       icons: <AiOutlineUser className='dr-icons' />
     },

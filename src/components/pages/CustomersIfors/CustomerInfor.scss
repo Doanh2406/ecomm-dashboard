@@ -14,6 +14,7 @@
   background-color: teal;
   cursor: pointer;
   padding: 5px;
+  text-decoration: none ;
 }
 .customer__container-title{
     display: flex;
@@ -24,7 +25,11 @@
   -webkit-box-shadow:0px 0px 15px -10px;
   padding: 20px;
   box-shadow: 0px 0px 15px -10px rgba(0,0 ,0, $alpha: .7);
-
+  
+  
+}
+.customer__show-top{
+  display: flex;
 
 }
 
@@ -36,12 +41,97 @@
   margin-left: 10px;
 }
 
-.customer__show-top{
-
-}
 .customer__show-image{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.customer__show-top__titles{
+     display: flex;
+     flex-direction: column;
+     margin-left: 30px;
+     text-align: start;
+ }
+
+.customer__show-bottom{
+    margin-top: 20px;
+    justify-content: start;
+  }
+.customer__show-bot__title{
+    font-weight: 300;
+    text-align: start;
+    color: #444;
+}
+.customer__show-bot__infor{
+    display: flex;
+    align-items: center;
+    margin: 20px 0px ;
     
 }
-.customer__show-bottom{
+.customer__show-top__name{
+    font-weight: 600;
+}
+.customer_shoe-bot_icon{
+    font-size: 16px;
+}
+.customer__show-bot__infor-title{
+    font-style: 15px;font-weight: 600;
+    color: rgb(175, 170, 170);
+    margin-left: 20px !important;
+}
+.customer__update-title{
+  font-style: 24px;
+  font-weight: 600;
+}
 
+.customer__update-form {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.customer__update-item {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.customer__update-input{
+  border: none;
+  border-bottom: 1px solid gray;
+  width:250px;
+  height: 30px;
+}
+.customer__update-item >label{
+  margin-bottom: 5px;font-style: 14px;
+  border: none;
+}
+
+.customer__update-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.customer__update-upload{
+  display: flex;
+  align-items: center;
+}
+.customer__update-img{
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+.customer__update-icon{
+  cursor: pointer;
+}
+.customer__update-button{
+   border-radius: 5px;
+   border: none;
+   padding: 5px;cursor: pointer;
+   background-color: darkblue;
+   color: white;
+   font-weight: 600;
 }

@@ -4,6 +4,7 @@ import { DataGrid } from "@material-ui/data-grid";
 import DeleteOutlineIcon from "@material-ui/icons/DeleteOutline";
 import { Link } from "react-router-dom";
 import {useState} from 'react'
+import {customerRows} from '../../../datajson';
 
 export default function Customer() {
   const columns = [
@@ -57,110 +58,8 @@ export default function Customer() {
       },
     },
   ];
-  
-  const rows = [
-    {
-      id: 1,
-      customerName: "Luong Viet Nhat",
-      avatar:
-        "https://baoquocte.vn/stores/news_dataimages/haiyen/042021/29/09/3812_800.jpg?rt=20210719095215",
-      email: "quydihansome@gmail.com",
-      status: "true",
-      transition: "$120$",
-    },
-    {
-      id: 2,
-      customerName: "Le Xuan Quoc Doanh",
-      avatar:
-        "https://baoquocte.vn/stores/news_dataimages/haiyen/042021/29/09/3812_800.jpg?rt=20210719095215",
-      email: "quydihansome@gmail.com",
-      status: "true",
-      transition: "$120$",
-    },
-    {
-      id: 3,
-      customerName: "TERUTU NA",
-      avatar:
-        "https://baoquocte.vn/stores/news_dataimages/haiyen/042021/29/09/3812_800.jpg?rt=20210719095215",
-      email: "quydihansome@gmail.com",
-      status: "true",
-      transition: "$120$",
-    },
-    {
-      id: 4,
-      customerName: "Luong Viet Nhat",
-      avatar:
-        "https://baoquocte.vn/stores/news_dataimages/haiyen/042021/29/09/3812_800.jpg?rt=20210719095215",
-      email: "quydihansome@gmail.com",
-      status: "true",
-      transition: "$120$",
-    },
-    {
-      id: 5,
-      customerName: "Le Xuan Quoc Doanh",
-      avatar:
-        "https://baoquocte.vn/stores/news_dataimages/haiyen/042021/29/09/3812_800.jpg?rt=20210719095215",
-      email: "quydihansome@gmail.com",
-      status: "true",
-      transition: "$120$",
-    },
-    {
-      id: 6,
-      customerName: "TERUTU NA",
-      avatar:
-        "https://baoquocte.vn/stores/news_dataimages/haiyen/042021/29/09/3812_800.jpg?rt=20210719095215",
-      email: "quydihansome@gmail.com",
-      status: "true",
-      transition: "$120$",
-    },
-  
-    {
-      id: 7,
-      customerName: "Le Xuan Quoc Doanh",
-      avatar:
-        "https://baoquocte.vn/stores/news_dataimages/haiyen/042021/29/09/3812_800.jpg?rt=20210719095215",
-      email: "quydihansome@gmail.com",
-      status: "true",
-      transition: "$120$",
-    },
-    {
-      id: 8,
-      customerName: "TERUTU NA",
-      avatar:
-        "https://baoquocte.vn/stores/news_dataimages/haiyen/042021/29/09/3812_800.jpg?rt=20210719095215",
-      email: "quydihansome@gmail.com",
-      status: "true",
-      transition: "$120$",
-    },
-    {
-      id: 9,
-      customerName: "Luong Viet Nhat",
-      avatar:
-        "https://baoquocte.vn/stores/news_dataimages/haiyen/042021/29/09/3812_800.jpg?rt=20210719095215",
-      email: "quydihansome@gmail.com",
-      status: "true",
-      transition: "$120$",
-    },
-    {
-      id: 10,
-      customerName: "Le Xuan Quoc Doanh",
-      avatar:
-        "https://baoquocte.vn/stores/news_dataimages/haiyen/042021/29/09/3812_800.jpg?rt=20210719095215",
-      email: "quydihansome@gmail.com",
-      status: "true",
-      transition: "$120$",
-    },
-    {
-      id: 11,
-      customerName: "TERUTU NA",
-      avatar:
-        "https://baoquocte.vn/stores/news_dataimages/haiyen/042021/29/09/3812_800.jpg?rt=20210719095215",
-      email: "quydihansome@gmail.com",
-      status: "true",
-      transition: "$120$",
-    },
-  ];
-  const [data, setData] = useState(rows);
+ 
+  const [data, setData] = useState(customerRows);
   const handleRemoveClick = (id) =>{
     setData(data.filter(item => item.id !== id))
   }

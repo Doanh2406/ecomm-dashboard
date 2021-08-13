@@ -1,0 +1,50 @@
+.new-customer {
+  flex: 4;
+  padding: 20px;
+}
+.new-customer__form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.new-customer__item {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-right: 20px;
+
+  label {
+    margin-bottom: 10px;
+    font-style: 14px;
+    font-weight: 600;
+    color: gray;
+  }
+  input {
+      height: 20px;
+      padding: 20px;
+      border: 1px solid gray;
+      border-radius: 5px;
+  }
+}
+.new-customer__gender{
+    input{
+        margin-top: 15px;
+    }
+    label{
+        margin: 10px;
+        font-style: 18px;color: #555;
+    }
+}
+.new-customer__select{
+    height: 40px;border-radius: 5px;
+}
+.new-customer__button{
+    width: 200px;
+    bottom: none;
+    background-color: darkblue ;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+}

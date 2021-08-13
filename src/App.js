@@ -8,6 +8,10 @@ import {
   Link
 } from "react-router-dom";
 import CustomerInfor from './components/pages/CustomersIfors/CustomerInfor';
+import NewCustomer from './components/pages/newCustomer/NewCustomer';
+import ProductList from './components/pages/productList/ProductList';
+import ProductInfor from './components/pages/ProductInfor/ProductInfor';
+import NewProduct from './components/pages/newProduct/NewProduct';
 function App() {
   return (
     <Router>
@@ -25,8 +29,20 @@ function App() {
           <Route path="/customer/:customerId">
             <CustomerInfor />
           </Route>
-          <Route path="/product">
+          <Route path="/newcustomer">
+            <NewCustomer />
+          </Route>
+          {/* <Route path="/product">
             <Product />
+          </Route> */}
+          <Route path="/products">
+            <ProductList />
+          </Route>
+          <Route path="/product/:productId">
+            <ProductInfor />
+          </Route>
+          <Route path="/newproduct">
+            <NewProduct />
           </Route>
           <Route exact path="/overview">
             <OverView />
