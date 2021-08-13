@@ -6,6 +6,7 @@ import Product from "./Product/Product";
 import Revenue from "./Revenue/Revenue";
 import Growth from "./Growth/Growth";
 import Order from "./Order/Order";
+import Header from "./Header/Header";
 export {
   Payment,
   Customer,
@@ -14,5 +15,6 @@ export {
   Product,
   Revenue,
   Growth,
-  Order
+  Order,
+  Header
 }

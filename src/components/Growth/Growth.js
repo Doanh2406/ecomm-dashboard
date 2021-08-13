@@ -101,14 +101,35 @@ export default function Growth() {
   return (
     <div className='re-container'>
       <Grid container xs={12} spacing={0}>
-
+      
         <Grid item xs={6}>
-
-          <Paper className={classes.paper}>
-            <Typography variant="h4">User visit </Typography>
-
-            <Line data={data} />
-          </Paper>
+        <Paper className={classes.paper} >
+            
+            {
+                total.map((item, index) => (
+    
+                  <Paper key={index} className={classes.paper} >
+                    <div className='gr-total-container' >
+    
+                      <div className='gr-total-title'>
+                        {item.icons}
+                        <div style={{ width: 10 }} />
+                        <Typography variant='h5'>
+                          {item.name}
+                        </Typography>
+                      </div>
+                      <Typography variant='subtitle1'>
+                        {item.total}
+                      </Typography>
+    
+                    </div>
+                  </Paper>
+                )
+                )
+              }
+              <div style={{height:20}} />
+            </Paper>
+          
           <Paper className={classes.paper}>
             <Typography variant="h4">Product order </Typography>
             <Bar data={data} />
@@ -118,38 +139,17 @@ export default function Growth() {
 
 
         <Grid item xs={6}>
-
+    
           <Paper className={classes.paper}>
             <Typography variant="h4">Money eaning</Typography>
 
             <Bar data={data} options={optionss} />
           </Paper>
 
-          <Paper className={classes.paper} >
-          
-            {
-              total.map((item, index) => (
+       <Paper className={classes.paper}>
+            <Typography variant="h4">User visit </Typography>
 
-                <Paper key={index} className={classes.paper} >
-                  <div className='gr-total-container' >
-
-                    <div className='gr-total-title'>
-                      {item.icons}
-                      <div style={{ width: 10 }} />
-                      <Typography variant='h5'>
-                        {item.name}
-                      </Typography>
-                    </div>
-                    <Typography variant='subtitle1'>
-                      {item.total}
-                    </Typography>
-
-                  </div>
-                </Paper>
-              )
-              )
-            }
-            <div style={{height:20}} />
+            <Line data={data} />
           </Paper>
 
 
