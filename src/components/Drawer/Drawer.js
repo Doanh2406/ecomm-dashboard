@@ -25,7 +25,7 @@ export default function Drawer() {
   }
   const menu = [
     {
-      link: '/overview',
+      link: '/',
       name: 'Over View',
       icons: <AiFillShopping className='dr-icons' />
     },
