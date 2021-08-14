@@ -9,6 +9,7 @@ import PaymentIcon from '@material-ui/icons/Payment';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import PersonIcon from '@material-ui/icons/Person';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
+import Header from '../Header/Header'
 
 import './Growth.scss'
 
@@ -99,7 +100,9 @@ export default function Growth() {
     },
   ]
   return (
+    
     <div className='re-container'>
+      
       <Grid container xs={12} spacing={0}>
       
         <Grid item xs={6}>

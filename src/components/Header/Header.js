@@ -5,13 +5,13 @@ import SettingsIcon from '@material-ui/icons/Settings';
 import HelpIcon from '@material-ui/icons/Help';
 
 import './Header.scss'
-export default function Header() {
+export default function Header({title}) {
   return (
     <div className='hd-container'>
-      <div className='hd-dr' style={{ minWidth: 220 }} />
+      <div className='hd-dr' style={{ minWidth: 240 }} />
       <div style={{width:10}} />
       <Typography variant='h4'>
-        PayMent
+        {title}
       </Typography>
       <div className='hd-search' >
         <div style={{width:'79%'}} />
